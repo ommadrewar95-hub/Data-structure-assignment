@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int hashTable[10] = {0};
+    int key;
+
+    cout << "Enter a number: ";
+    cin >> key;
+
+    int index = key % 10;
+
+    hashTable[index] = key;
+
+    cout << "Hash Index = " << index << endl;
+    cout << "Stored Value = " << hashTable[index] << endl;
+
+    return 0;
+}
